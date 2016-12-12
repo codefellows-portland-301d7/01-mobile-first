@@ -23,9 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-hamburger::before {
-	content: "\2630";
-}
 .icon-home::before {
 	content: "\e908";
 }
@@ -42,7 +39,7 @@
 	content: "\e90a";
 }
 .icon-menu::before {
-	content: "\e902";
+	content: "\2630";
 }
 .icon-link::before {
 	content: "\e903";

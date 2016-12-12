@@ -10,17 +10,21 @@
 }
 
 .icon-menu {
-  /* TODO: Add styles for the icon-menu class (whether it be the
+  /* TODO: DONE Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+    font-size: 3em;
+    text-align: right;
+
 }
 
 .main-nav {
   padding: 0.1em;
+  clear: both;
 }
 
 .main-nav ul {
-  /* NOTE: We are by defualt hiding the main nav list because we are
+  /* NOTE: DONE We are by defualt hiding the main nav list because we are
       expecting the UI to be mobile, therefore our new icon menu
       takes its place. */
   display: none;
@@ -58,7 +62,7 @@
   text-decoration: none;
 }
 
-/* TODO: Now add styles for how things should look on a larger screen,
+/* TODO: DONE Now add styles for how things should look on a larger screen,
    (hint: min is in!):
 @media screen...
          - Hide the hamburger.
@@ -66,3 +70,19 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  .main-nav ul {
+    display: inline-flex;
+  }
+  .main-nav:hover ul {
+    display: inline-flex;
+  }
+
+  .main-nav li {
+    margin-right: 1.5em;
+    padding: .5em 2em;
+  }
+}
