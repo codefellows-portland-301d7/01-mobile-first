@@ -1,5 +1,7 @@
 /* TODO: Add a rule for images, so they never exceed their container's width. */
-
+img {
+  object-fit: contain;
+}
 
 
 body {
