@@ -68,3 +68,15 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+@media only screen and (min-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+  .main-nav ul {
+    display: block;
+  }
+  .main-nav li {
+    display: inline-block;
+    padding: 10px 40px;
+  }
+}
