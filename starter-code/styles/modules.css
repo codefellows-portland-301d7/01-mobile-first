@@ -13,6 +13,14 @@
   /* TODO: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+  max-width: 50%;
+  max-height: 50%;
+  float: right;
+  display: inline;
+  /*height: 90%;
+  width: 90%;*/
+  font-size: 500%;
+  outline: 3px dashed blue;
 }
 
 .main-nav {
