@@ -13,7 +13,21 @@
   /* TODO: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+  max-width: 50%;
+  max-height: 50%;
+  float: right;
+  display: inline;
+  /*height: 90%;
+  width: 90%;*/
+  font-size: 500%;
+  outline: 3px dashed blue;
 }
+
+/*.icon-menu:hover {
+  main-nav ul {
+    display: block;
+  }
+}*/
 
 .main-nav {
   padding: 0.1em;
@@ -31,6 +45,7 @@
 
 .main-nav:hover ul {
   display: block;
+  /*display: inline-block;*/
 }
 
 .main-nav li {
@@ -66,3 +81,23 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+/*@media only screen and (max-width:640px) {
+  .main-nav ul:hover {
+    max-width: 639px;
+  }
+}*/
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  .main-nav ul {
+    display: inline-block;
+    outline: 3px solid green;
+    list-style: none;
+    clear: both;
+  }
+  .main-nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
+}
